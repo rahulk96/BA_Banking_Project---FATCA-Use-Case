@@ -1,5 +1,5 @@
-# BA_Banking_Project-FATCA_Use_Case
-# FATCA Declaration – Internet Banking
+# BA_Banking_Project- FATCA (Foreign Account Tax Compliance Act)
+# FATCA Declaration - Internet Banking
 
 ## Project Overview
 
