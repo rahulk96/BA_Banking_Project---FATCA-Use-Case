@@ -1,4 +1,4 @@
-# BA_Banking_Project---FATCA-Use-Case
+# BA_Banking_Project-FATCA_Use_Case
 # FATCA Declaration – Internet Banking
 
 ## Project Overview
