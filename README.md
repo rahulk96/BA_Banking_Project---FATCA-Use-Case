@@ -1,16 +1,86 @@
 # BA_Banking_Project---FATCA-Use-Case
+# FATCA Declaration – Internet Banking
 
-Foreign Account Tax Compliant Act (FATCA) Project Details
-Eritrea and the USA are the only two countries in the world which impose income tax on their respective non-resident citizens. Specifically, the USA citizens need to pay the tax to the USA also if the foreign tax is less than the USA tax.
-To ensure that all non-resident citizens are declaring and paying their respective dues, FATCA (Foreign Account Tax Compliant Act) came into existence in 2010. The USA residents and non-residents (including green card holders) are covered under this law.
-FATCA requires all foreign financial institutes (such as banks, mutual funds, pension schemes etc.) to disclose, to the relevant USA authorities, any account holder with them who is a USA resident for the tax purpose.
-The law came into existence with an aggressive timeline for all FFIs. The FFIs were supposed to highlight any account having the account holder(s) meeting any of the following condition(s):
-1. Place of birth is the USA
-2. Has a mailing address or telephone number of the USA
-3. Has transferred power of attorney to a person residing in the USA
-4. Has a standing instruction to transfer money to any account in the USA
-India and the USA entered into an agreement in 2015 which mandates financial institutions in India to obtain self-certifications of all individual and entity account holders to confirm if they are USA citizens for tax purpose. The onus is also on these financial institutions to carry out due diligence.
-All financial institutes in India have put in place controls as per FATCA requirements. Individual and entity account holders can either provide the self-declaration on a physical form or through online tools. This self-declaration requires the account holders to submit the details like country of birth, existing and past citizenships, Residence for tax purpose, TIN received from all the countries (if applicable) in addition to a self-attested declaration informing whether the account holders has any tax liability in the USA or not.
+## Project Overview
+
+This project demonstrates a Business Analyst solution for enhancing an existing retail bank's Internet Banking facility to support FATCA self-declaration.
+
+The enhancement enables customers to:
+
+- View their FATCA declaration status
+- Complete and submit the FATCA self-declaration
+- Postpone the declaration for up to 6 months after rollout, where applicable
+- Continue using Internet Banking after postponement
+- Be redirected to the FATCA submission journey when the declaration remains pending
+
+## Business Scenario
+
+The bank has received a requirement to introduce FATCA declaration and relevant information submission into its existing Internet Banking facility.
+
+The customer is required to complete the FATCA declaration when the declaration is pending. If the six-month postponement window is still open, the customer can postpone the declaration and continue using Internet Banking.
+
+## Key Use Cases
+
+1. **Check FATCA Status and Display FATCA Page**
+   - Check the customer's FATCA status during login
+   - Display the FATCA page when the status is pending
+   - Route submitted customers directly to the Internet Banking dashboard
+
+2. **Submit FATCA Declaration**
+   - Capture country of birth
+   - Capture citizenship and past citizenship
+   - Capture tax residency and TIN
+   - Capture US tax liability
+   - Capture US TIN where applicable
+   - Capture customer self-declaration
+   - Validate and submit the declaration
+
+3. **Postpone FATCA Declaration**
+   - Allow postponement within the six-month window
+   - Display a confirmation popup
+   - Record the postponement
+   - Keep the FATCA status as pending
+   - Display the FATCA journey again on the next login
+
+## Actors
+
+| Actor/System | Role |
+|---|---|
+| Customer | Provides FATCA information, submits or postpones the declaration |
+| Internet Banking System | Authenticates the customer and manages the FATCA journey |
+| Core Banking System | Provides FATCA status and receives the updated submitted status |
+
+## Deliverables
+
+This repository contains:
+
+- Use Case Document
+- Use Case Diagram
+- PlantUML source code
+- FATCA Wireframes
+- Traceability Matrix
+
+## Repository Structure
+
+```text
+FATCA-Declaration-Internet-Banking/
+│
+├── README.md
+│
+├── Documentation/
+│   └── FATCA_Use_Case_Document.pdf
+│
+├── Wireframes/
+│   ├── Wireframe-01-Login.png
+│   ├── Wireframe-02-FATCA-Declaration.png
+│   ├── Wireframe-03-Expired-Postponement.png
+│   ├── Wireframe-04-Validation-Errors.png
+│   ├── Wireframe-05-Declaration-Submitted.png
+│   └── Wireframe-06-Postpone-Confirmation.png
+│
+└── Use-Case-Diagram/
+    ├── FATCA-Use-Case-Diagram.png
+    └── FATCA-Use-Case-Diagram.puml
 
 
 
