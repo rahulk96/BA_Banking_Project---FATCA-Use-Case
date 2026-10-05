@@ -14,9 +14,9 @@ All financial institutes in India have put in place controls as per FATCA requir
 
 
 
-Project Task
-Assume that -
-you are a business analyst working in IT department of a leading retail bank in India.
+Project Task - 
+
+Assume that you are a business analyst working in IT department of a leading retail bank in India.
 Your team has received a mandate to include FATCA declaration and relevant information submission form into existing internet banking facility.
 The users should land on FATCA submission page every time they use net banking facility.
 The user can postpone the FATCA declaration submission for up to 6 months after the functionality is rolled out.
